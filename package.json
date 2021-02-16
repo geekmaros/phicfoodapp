@@ -26,7 +26,7 @@
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
     "sass": "^1.32.7",
-    "sass-loader": "10",
+    "sass-loader": "11",
     "vue-jest": "^3.0.4"
   }
 }
