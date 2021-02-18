@@ -1,7 +1,7 @@
 <template>
    <main>
-        <div v-if="cartLength" class="smallnum">
-        {{cartLength}}
+        <div v-if="cartCount" class="smallnum">
+        {{cartCount}}
     </div>
     <div v-else class="">
         No Item in Cart
@@ -15,7 +15,7 @@
  export default {
      computed: {
          ...mapGetters([
-             'cartLength',
+             'cartCount',
          ])
      },
  };

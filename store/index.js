@@ -7,10 +7,13 @@ export const state = () => ({
 
 export const getters = {
   totalPrice: state => {
-    if(!state.card.length) return 0
+    if(!state.cart.length) return 0
     return state.cart.reduce((ac, next) => ac + +next.combinedPrice, 0 )
   },
-  cartLength: state => state.cart.length
+  cartCount: state => {
+    if (!state.cart.length) return 0
+    return state.cart.reduce((ac, next) => ac + +next.count, 0)
+  }
 }
 
 export const mutations = {
