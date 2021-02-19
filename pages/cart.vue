@@ -2,7 +2,7 @@
   <main class="container cart">
     <h2>Cart</h2>
 
-    <table v-if="!cart.length">
+    <table v-if="cart.length > 0">
       <thead>
         <tr>
           <th>Item</th>
